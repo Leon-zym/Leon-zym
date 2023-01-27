@@ -15,3 +15,6 @@ $RECYCLE.BIN/
 # obsidain config files
 .obsidian
 .trash
+
+# Node
+node_modules/
