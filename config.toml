@@ -1,51 +1,19 @@
+title = "LEON"                        # site title                     # 网站标题
+theme = "cream"
 baseURL = "https://blog.leonzym.com/"
 languageCode = "en"
 defaultContentLanguage = "en"
-title = "LEON"                        # site title                     # 网站标题
-theme = "cream"
 hasCJKLanguage = true                  # has chinese/japanese/korean ?  # 自动检测是否包含 中文\日文\韩文
+enableEmoji = true
 summaryLength = 100
 paginate = 10                           # shows the number of articles   # 首页显示文章数量
 rssLimit = 10                           # limit the number of posts in rss output
-enableEmoji = true
 googleAnalytics = ""                   # your google analytics id       # Google统计代码
 disqusShortname = ""                   # your discuss shortname         # Disqus评论系统代码
-
-pygmentsUseClasses = true
-pygmentCodeFences = true
-pygmentscodefencesguesssyntax = true
+copyright = ""
 
 [author]                               # essential                      # 必需
   name = "Leon"
-
-[blackfriday]
-  smartypants = false
-
-[[menu.main]]                          # config your menu               # 配置菜单
-  name = "Home"
-  weight = 10
-  identifier = "home"
-  url = "/"
-[[menu.main]]
-  name = "Archive"
-  weight = 20
-  identifier = "posts"
-  url = "/posts/"
-[[menu.main]]
-  name = "Categories"
-  weight = 30
-  identifier = "categories"
-  url = "/categories/"
-[[menu.main]]
-  name = "Tags"
-  weight = 40
-  identifier = "tags"
-  url = "/tags/"
-[[menu.main]]
-  name = "About"
-  weight = 50
-  identifier = "about"
-  url = "/about/"
 
 [params]
   subTitle = ""                                       # site's subTitle              # 网站二级标题
@@ -55,26 +23,58 @@ pygmentscodefencesguesssyntax = true
   enableMathJax = false                                                 # enable mathjax               # 是否使用mathjax（数学公式）
   enableSummary = true                                                 # display the article summary  # 是否显示文章摘要
   mainSections = ["posts","post"]
-  
-# Valine.
-# You can get your appid and appkey from https://leancloud.cn
-# more info please open https://valine.js.org
-[params.valine]
-  enable = true
-  appId = "zfq7GkBtKpYLeVhC7CKBB4JG-gzGzoHsz"
-  appKey = "eiLbXy1Pu4Wwbq6OUDoQHSDk"
-  placeholder = ""
-  avatar = "retro"       # see optional value in https://valine.js.org/avatar.html
-  meta = ["nick"]        # commenter's info, ['nick','mail','link']
+  # Valine.
+  # You can get your appid and appkey from https://leancloud.cn
+  # more info please open https://valine.js.org
+  [params.valine]
+    enable = true
+    appId = "zfq7GkBtKpYLeVhC7CKBB4JG-gzGzoHsz"
+    appKey = "eiLbXy1Pu4Wwbq6OUDoQHSDk"
+    placeholder = ""
+    avatar = "retro"       # see optional value in https://valine.js.org/avatar.html
+    meta = ["nick"]        # commenter's info, ['nick','mail','link']
+
+[menu]                                 # config your menu               # 配置菜单
+  [[menu.main]]
+    name = "Home"
+    weight = 10
+    identifier = "home"
+    url = "/"
+  [[menu.main]]
+    name = "Archive"
+    weight = 20
+    identifier = "posts"
+    url = "/posts/"
+  [[menu.main]]
+    name = "Categories"
+    weight = 30
+    identifier = "categories"
+    url = "/categories/"
+  [[menu.main]]
+    name = "Tags"
+    weight = 40
+    identifier = "tags"
+    url = "/tags/"
+  [[menu.main]]
+    name = "About"
+    weight = 50
+    identifier = "about"
+    url = "/about/"
 
 # Your socail's url
 # 社交地址配置
+# find more icon: https://remixicon.com/
 [social]
   github = "https://github.com/leon-zym/"
   instagram = "https://www.instagram.com/leon.zym/"
-  weibo = "https://weibo.com/u/6634867195/"
+  twitter = "https://twitter.com/leon_zym/"
+  # weibo = "https://weibo.com/u/6634867195/"
 
 [markup]
-[markup.goldmark]
-[markup.goldmark.renderer]
-  unsafe = true
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    guessSyntax = true
+    # style = 'xcode'
+    style = 'tango'
