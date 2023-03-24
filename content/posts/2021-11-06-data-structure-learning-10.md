@@ -20,20 +20,20 @@ tags: [CS]
 
 - **RR右单旋**
 
-![Untitled](https://leon-blog-assets.oss-cn-hangzhou.aliyuncs.com/images/cs-data-structure-5.jpg)
+![Untitled](https://p.ipic.vip/1i6yxr.jpg)
 
 - **LL左单旋**
 
-![Untitled](https://leon-blog-assets.oss-cn-hangzhou.aliyuncs.com/images/cs-data-structure-6.jpg)
+![Untitled](https://p.ipic.vip/3c2er7.jpg)
 
 - **LR旋转**
 
-![Untitled](https://leon-blog-assets.oss-cn-hangzhou.aliyuncs.com/images/cs-data-structure-7.jpg)
+![Untitled](https://p.ipic.vip/yusgwq.jpg)
 
 - **RL旋转**
 
-![Untitled](https://leon-blog-assets.oss-cn-hangzhou.aliyuncs.com/images/cs-data-structure-8.jpg)
+![Untitled](https://p.ipic.vip/8m0ii9.jpg)
 
 - **无需调整**
 
-![Untitled](https://leon-blog-assets.oss-cn-hangzhou.aliyuncs.com/images/cs-data-structure-9.jpg)
+![Untitled](https://p.ipic.vip/wkmvej.jpg)
