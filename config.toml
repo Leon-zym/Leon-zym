@@ -6,8 +6,8 @@ defaultContentLanguage = "en"
 hasCJKLanguage = true                  # has chinese/japanese/korean ?  # 自动检测是否包含 中文\日文\韩文
 enableEmoji = true
 summaryLength = 140
-paginate = 6                           # shows the number of articles   # 首页显示文章数量
-rssLimit = 10                           # limit the number of posts in rss output
+paginate = 9                           # shows the number of articles   # 首页显示文章数量
+rssLimit = 9                           # limit the number of posts in rss output
 googleAnalytics = ""                   # your google analytics id       # Google统计代码
 disqusShortname = ""                   # your discuss shortname         # Disqus评论系统代码
 copyright = ""
@@ -62,8 +62,8 @@ copyright = ""
 [social]
   github = "https://github.com/leon-zym/"
   instagram = "https://www.instagram.com/leon.zym/"
-  twitter = "https://twitter.com/leon_zym/"
-  # weibo = "https://weibo.com/u/6634867195/"
+  # twitter = "https://twitter.com/leon_zym/"
+  weibo = "https://weibo.com/u/6634867195/"
 
 [markup]
   [markup.goldmark]
