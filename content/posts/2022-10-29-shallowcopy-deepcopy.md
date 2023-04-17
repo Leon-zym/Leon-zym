@@ -180,4 +180,27 @@ console.log(deepCopy)
 
 ### 自己手写循环递归实现
 
-// TODO
+```js
+function deepCopy(obj) {
+  // 如果是基本数据类型或者是函数，直接返回
+  if (typeof obj !== 'object' || obj === null || obj instanceof Function) {
+    return obj;
+  }
+
+  // 对日期类型和正则表达式类型单独处理
+  if (obj instanceof Date) return new Date(obj);
+  if (obj instanceof RegExp) return new RegExp(obj);
+  
+  // 创建一个新的对象
+  const copy = Array.isArray(obj) ? [] : {};
+  
+  // 遍历对象的属性并复制到新对象中
+  for (let key in obj) {
+    if (Object.prototype.hasOwnProperty.call(obj, key)) {
+      copy[key] = deepCopy(obj[key]);
+    }
+  }
+  
+  return copy;
+}
+```
